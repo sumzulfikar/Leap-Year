@@ -1,0 +1,48 @@
+.frog-area{
+    padding: 0;
+    margin: 0;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    position: relative;
+    overflow: hidden;
+}
+.frog-face{
+    background-color: #9bcc61;
+    border-radius: 43% 47% 42% 44% / 57% 54% 45% 40%  ;
+    width:239px ;
+    height: 157px;
+    position: relative;
+
+}
+.frog-lf-eye{
+    background-color: #8e61cc;
+    height: 50px;
+    left:2vmin;
+    width:50px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.frog-rt-eye{
+    background-color: #8e61cc;
+    height: 50px;
+    right:3vmin;
+    width:50px;
+    border-radius: 50%;
+    position: absolute;
+   
+   }
+.frog-body{
+
+    border-radius: 41% 46% 42% 43% / 34% 33% 35% 34% ;
+    background-color: #9bcc61;
+    position: absolute;
+    width:119.5px ;
+    height:140px;
+    bottom: 154px;
+    border-bottom:solid #5b9632;
+}
