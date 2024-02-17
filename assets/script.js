@@ -40,6 +40,7 @@ createDisplay=(result,year)=>{
     divCardTitle.append(yearTitle);
     const divCardResult=document.createElement("div");
     const isLeapYear=document.createElement("p");
+    divCardResult.setAttribute("class","message");
     isLeapYear.textContent=result;
     console.log(isLeapYear);
     divCardResult.append(isLeapYear);

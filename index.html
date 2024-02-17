@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/style.css">
-
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/frog.css">
     <title>Fun with Leap Year</title>
 </head>
 <body>
@@ -26,10 +26,10 @@
     <main>
         <!-- Section where users can interact and find out if an Year is Leap Year -->
         <section class="container">
-            <div class="relative mt-2 rounded-md shadow-sm">
-                <label for="year" class="block text-sm font-medium leading-6 text-gray-900">Which Year do you want to search?</label>
-                <input type="text" name="year" id="yearInput" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="YYYY">
-                    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ..." id="searchBtn">
+            <div class="userInput">
+                <label for="year" class="block text-gray-900">Which <em>Year</em> do you want to search?</label>
+                <input type="text" name="year" id="yearInput" class="block w-mid rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="YYYY">
+                    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300" id="searchBtn">
                     Search
                     </button>
             </div>
@@ -37,6 +37,25 @@
 
             </div>
         </section>
+        <section class="frog-area">
+            <div class="frog-face"> 
+                <div class="frog-lf-eye"></div>
+                <div class="frog-rt-eye"></div>
+            </div>
+            <div class="frog-body">
+                <div class="frog-lf-leg"></div>
+                <div class="frog-rt-leg"></div>
+
+            </div>
+        </section>
+        <div class="row">
+            <div class="col">
+                <h3>Click on the frog and see the next Leap Year displayed</h3>
+            </div>
+            <div class="col">
+                <h2>The Next Leap Year is:</h2>
+            </div>
+        </div>
     </main>
     <!-- this is a footer -->
     <footer>
@@ -44,7 +63,7 @@
 
     </footer>
     <!-- links to scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
     <script src="./assets/script.js"></script>
 </body>
 </html>

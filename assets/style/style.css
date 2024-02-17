@@ -1,0 +1,31 @@
+:root{
+    margin: 30px;
+}
+body{
+    
+box-sizing: border-box;
+}
+
+header{
+    height: 20vmin;
+    width: 70vmin;
+    
+    padding: 0;
+    background-color: beige;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+.cotainer,.message,.title{
+    width: 50vmin;
+}
+.title{
+    border: solid purple;
+  
+    font-size: larger;
+}
+#message{
+    border: solid greenyellow;
+    font-size: medium;
+  
+}
