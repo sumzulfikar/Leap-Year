@@ -18,31 +18,108 @@
 
 }
 .frog-lf-eye{
-    background-color: #8e61cc;
-    height: 50px;
-    left:2vmin;
-    width:50px;
+    border: solid 10px #82c345;
+    background-color:#fdfbfa;
+    height: 67px;
+    width:67px;
+    left:3vmin;
+    top:-4vmin;
     border-radius: 50%;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+
+}
+.frog-lf-pupil{
+ background-color: #010101;
+ border-radius: 50%;
+ height: 48px;
+ width:48px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+}
+.sparkle1-lf{
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    background-color:#fdfbfa;
+    align-items: bottom;   
+    margin-left: 10%;
+
+}
+.sparkle2-lf{
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:#fdfbfa;
+    margin-left: 10%;
+
+}
+.sparkle1-rt{
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    background-color:#fdfbfa;
+    margin-left: 10%;
+
+}
+.sparkle2-rt{
+    height: 15px;
+    width:15px;
+    border-radius: 50%;
+    background-color:#fdfbfa;
+    margin-left: 10%;
+
 
 }
 
 .frog-rt-eye{
-    background-color: #8e61cc;
-    height: 50px;
-    right:3vmin;
-    width:50px;
+    border: solid 10px #82c345;
+    background-color:#fdfbfa;
+    height: 67px;
+    width:67px;
+    right: 3vmin;
+    top: -4vmin;
     border-radius: 50%;
     position: absolute;
-   
+    display: flex;
+    justify-content: center;
+    align-items: left;
+      
    }
+   .frog-rt-pupil{
+    background-color: #010101;
+    border-radius: 50%;
+    height: 48px;
+    width:48px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  
+}
+.smile{
+    width: 10vmin;
+    height: 1vmin;
+    background-color: #010101;
+    border-radius: 79% 0% 59% 21% /35% 70% 76% 66%;
+    position: relative;
+    top: 14vmin;
+    left: 12vmin;
+
+
+}
 .frog-body{
 
     border-radius: 41% 46% 42% 43% / 34% 33% 35% 34% ;
-    background-color: #9bcc61;
+    background-color:#9bcc61;
     position: absolute;
     width:119.5px ;
     height:140px;
-    bottom: 154px;
+    bottom: 177px;
     border-bottom:solid #5b9632;
 }
