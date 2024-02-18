@@ -1,14 +1,32 @@
 .frog-area{
-    padding: 0;
-    margin: 0;
-    height:100vh;
+    padding: 2px;
+    margin: -177px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     position: relative;
     overflow: hidden;
 }
+
+#left-arrow,#right-arrow{
+    background-color: #4c4d49;  
+    height:10vmin;
+    width: 20vmin;
+    position: absolute;
+}
+
+#left-arrow{
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    left:30vmin;
+}
+
+#right-arrow{
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    right:30vmin;
+
+}
+
 .frog-face{
     background-color: #9bcc61;
     border-radius: 43% 47% 42% 44% / 57% 54% 45% 40%  ;
@@ -122,4 +140,54 @@
     height:140px;
     bottom: 177px;
     border-bottom:solid #5b9632;
+    
 }
+.leg-area{
+    display: flex;
+
+    position: relative;
+}
+.frog-leg-lf, .frog-leg-rt{
+    border-radius: 50%;
+    background-color: #6ead3b;
+    width: 16vmin;
+    height: 9vmin;
+    top: 17vmin;
+    position: absolute;
+   
+  
+}
+.frog-leg-lf{
+    left: -32vmin;
+    transform: rotate(45deg);
+
+}
+.frog-leg-rt{
+    right:0vmin;
+    transform: rotate(-45deg);
+}
+.lf-hand, .rt-hand{
+    background-color: #81c146;
+    position: absolute;
+    width: 1vmin;
+    height: 7vmin;
+   
+    
+
+
+}
+.lf-hand{
+    transform: rotate(41deg);
+    left: -1vmin;
+    top: 1vmin;
+    border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
+    
+}
+.rt-hand{
+    transform: rotate(137deg);
+    right: -1vmin;
+    top: 1vmin;
+    border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
+}
+
+
