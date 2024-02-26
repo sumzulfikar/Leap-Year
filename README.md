@@ -4,5 +4,6 @@ As tribute to the latest Leap year in 2024, this is a webpage for users to learn
 ## Features
 - Users are able to find out if specific year is a Leap Year
 - The users can use the Left and Right arros to find out the previous of next Leap year
+- Click this [link](https://sumzulfikar.github.io/Leap-Year/) to find out about Leap Years!
 
 
