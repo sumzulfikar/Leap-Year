@@ -22,11 +22,6 @@ header{
     z-index: 1;
 }
 
-/* .container,.message,.title{
-    width: 50vmin;
-    margin: 20%;
-    height: 100%;
-} */
 .title{
     border: solid purple;
   

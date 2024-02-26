@@ -1,7 +1,6 @@
 .frog-area{
 
-    padding: 20px;
-    /* margin: -177px; */
+    padding-top: 20px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -168,6 +167,7 @@
     right:0vmin;
     transform: rotate(-45deg);
 }
+
 .lf-hand, .rt-hand{
     background-color: #81c146;
     position: absolute;
@@ -179,16 +179,16 @@
 
 }
 .lf-hand{
-    transform: rotate(41deg);
-    left: -2vmin;
-    top: 5vmin;
+    transform: rotate(49deg);
+    left: -1vmin;
+    top: 1vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
     
 }
 .rt-hand{
-    transform: rotate(137deg);
-    right: -2vmin;
-    top: 5vmin;
+    transform: rotate(130deg);
+    right: -1vmin;
+    top: 1vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
 }
 
