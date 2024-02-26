@@ -1,20 +1,26 @@
 
 body{
     
-height: 148vh;
+height: 100vh;
+z-index: 7;
 }
 
 header{
     height: 20vmin;
-    width: 70vmin;
-    
+    width: 90vmin;
     padding: 0;
     background-color: beige;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
-
+.container{
+    width:50vmin;
+    height:10vmin;
+    z-index: 1;
+}
 
 /* .container,.message,.title{
     width: 50vmin;
@@ -27,7 +33,7 @@ header{
     font-size: larger;
 }
 #message{
-    border: solid greenyellow;
+    border: 2px solid greenyellow;
     font-size: medium;
   
 }

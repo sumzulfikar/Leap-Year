@@ -1,13 +1,14 @@
 .frog-area{
-    /* padding-top: 20px; */
-    /* margin: -177px;
-    height: 100vh; */
+
+    padding: 20px;
+    /* margin: -177px; */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-color: aquamarine;
+    z-index: 9;
 }
 
 #left-arrow,#right-arrow{
@@ -145,6 +146,7 @@
 }
 .leg-area{
     display: flex;
+
     position: relative;
 }
 .frog-leg-lf, .frog-leg-rt{
@@ -178,15 +180,15 @@
 }
 .lf-hand{
     transform: rotate(41deg);
-    left: -1vmin;
-    top: 1vmin;
+    left: -2vmin;
+    top: 5vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
     
 }
 .rt-hand{
     transform: rotate(137deg);
-    right: -1vmin;
-    top: 1vmin;
+    right: -2vmin;
+    top: 5vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
 }
 

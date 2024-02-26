@@ -3,45 +3,40 @@ const yearInput=document.querySelector("#yearInput");
 const searchBtn=document.querySelector("#searchBtn");
 const rightArrow=document.querySelector("#right-arrow");
 const leftArrow=document.querySelector("#left-arrow");
-let display=""
-//Below function returns the previous leap year
-const previousLeap=(event,year)=>{
-    event.preventDefault;
-    while(true){
-        year--;
-        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
-            display=`the previous leap year was ${year}`;
-            console.log(display);
-            return year;
-        }
-    }
+let nextArrow=document.querySelector("#next-arrow");
+let prevArrow=document.querySelector("#previous-arrow");
 
+let display="";
+// Retreiving the last year stored by user from local storage
+let storedYear=localStorage.getItem("SystemInput");
+// if the year is not present in the local storage, then get the current year
+if(!storedYear){
+    storedYear= new Date().getFullYear();
 }
 
-// Below function returns next Leap Year
-const nextLeap=(event,year)=>{
-    event.preventDefault;
-    while(true){
-        year++;
-        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
-            display=`the next leap year is ${year}`;
-            console.log(display);
-            return year;
-        }
-    }
+// //earInput=storedYear;
 
-}
-
-leftArrow.addEventListener("click",previousLeap());
-rightArrow.addEventListener("click",nextLeap());
+// yearInput.value=storedYear;
 
 searchBtn.addEventListener("click",function(event){
     event.preventDefault;
-    let userInput=yearInput.value.trim();
-    userInput=parseInt(userInput);
-    calculateLeapYear(userInput);
+    let year = parseInt(yearInput.value.trim());
+    calculateLeapYear(year);
     
-})
+});
+
+leftArrow.addEventListener("click",function(event){ event.preventDefault;
+    storedYear=previousLeap(storedYear);
+
+});
+rightArrow.addEventListener("click",function(event){
+    event.preventDefault;
+    storedYear=nextLeap(storedYear);
+
+
+});
+
+
 
 calculateLeapYear=(year)=>{
 //The logic for calculating Leap Year if year is divisible by 4 
@@ -60,6 +55,7 @@ let result="";
         }
 
     createDisplay(result,year);
+    localStorage.setItem("User Input", year);
 
 }
 
@@ -80,6 +76,42 @@ createDisplay=(result,year)=>{
     resultDisplay.appendChild(divCardTitle);
     resultDisplay.appendChild(divCardResult);
     console.log(resultDisplay);
+
+}
+
+
+
+
+//Below function returns the previous leap year
+const previousLeap=(year)=>{
+    
+    while(true){
+        year--;
+        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
+            prevArrow.setAttribute("style","display: block");
+            nextArrow.setAttribute("style","display: none");
+            prevArrow.textContent=`The Previous Leap Year was: ${year}`;
+            localStorage.setItem("System Input", year);
+            return year;
+            
+        }
+    }
+
+}
+
+// Below function returns next Leap Year
+const nextLeap=(year)=>{
+    
+    while(true){
+        year++;
+        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
+            prevArrow.setAttribute("style","display: none");
+            nextArrow.setAttribute("style","display: block");
+            nextArrow.textContent=`The Next Leap Year is: ${year}`;
+            localStorage.setItem("System Input", year);
+            return year;
+        }
+    }
 
 }
 
