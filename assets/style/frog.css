@@ -1,12 +1,13 @@
 .frog-area{
-    padding: 2px;
-    margin: -177px;
-    height: 100vh;
+    /* padding-top: 20px; */
+    /* margin: -177px;
+    height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-color: aquamarine;
 }
 
 #left-arrow,#right-arrow{
@@ -144,7 +145,6 @@
 }
 .leg-area{
     display: flex;
-
     position: relative;
 }
 .frog-leg-lf, .frog-leg-rt{

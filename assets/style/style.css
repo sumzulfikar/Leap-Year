@@ -1,9 +1,7 @@
-:root{
-    margin: 30px;
-}
+
 body{
     
-box-sizing: border-box;
+height: 148vh;
 }
 
 header{
@@ -12,13 +10,17 @@ header{
     
     padding: 0;
     background-color: beige;
-    display: flexbox;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.cotainer,.message,.title{
+
+
+/* .container,.message,.title{
     width: 50vmin;
-}
+    margin: 20%;
+    height: 100%;
+} */
 .title{
     border: solid purple;
   
