@@ -1,6 +1,39 @@
 //getting the user input from the html
 const yearInput=document.querySelector("#yearInput");
 const searchBtn=document.querySelector("#searchBtn");
+const rightArrow=document.querySelector("#right-arrow");
+const leftArrow=document.querySelector("#left-arrow");
+let display=""
+//Below function returns the previous leap year
+const previousLeap=(event,year)=>{
+    event.preventDefault;
+    while(true){
+        year--;
+        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
+            display=`the previous leap year was ${year}`;
+            console.log(display);
+            return year;
+        }
+    }
+
+}
+
+// Below function returns next Leap Year
+const nextLeap=(event,year)=>{
+    event.preventDefault;
+    while(true){
+        year++;
+        if ((year%4===0 && year%100!== 0) ||(year%400===0)){
+            display=`the next leap year is ${year}`;
+            console.log(display);
+            return year;
+        }
+    }
+
+}
+
+leftArrow.addEventListener("click",previousLeap());
+rightArrow.addEventListener("click",nextLeap());
 
 searchBtn.addEventListener("click",function(event){
     event.preventDefault;
@@ -49,3 +82,4 @@ createDisplay=(result,year)=>{
     console.log(resultDisplay);
 
 }
+
