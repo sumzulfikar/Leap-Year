@@ -14,10 +14,7 @@ if(!storedYear){
     storedYear= new Date().getFullYear();
 }
 
-// //earInput=storedYear;
-
-// yearInput.value=storedYear;
-
+//When user inputs year and clicks search
 searchBtn.addEventListener("click",function(event){
     event.preventDefault;
     let year = parseInt(yearInput.value.trim());
@@ -25,22 +22,22 @@ searchBtn.addEventListener("click",function(event){
     
 });
 
+//When user clicks left arrow 
+
 leftArrow.addEventListener("click",function(event){ event.preventDefault;
     storedYear=previousLeap(storedYear);
 
 });
+//When user clicks right arrow 
 rightArrow.addEventListener("click",function(event){
     event.preventDefault;
     storedYear=nextLeap(storedYear);
-
-
 });
 
-
-
-calculateLeapYear=(year)=>{
 //The logic for calculating Leap Year if year is divisible by 4 
 //exception is end of century is leap year when divisible by 400
+calculateLeapYear=(year)=>{
+
 let result="";
     if(year%100!=0&&year%4==0){
         result=`Yes, ${year} is a Leap Year!`;
@@ -62,31 +59,25 @@ let result="";
 createDisplay=(result,year)=>{
     
     const resultDisplay=document.querySelector("#result");
-    resultDisplay.textContent= "";
+        resultDisplay.textContent= "";
     const divCardTitle=document.createElement("div");
-    divCardTitle.setAttribute("class","title");
+        divCardTitle.setAttribute("class","title");
     const yearTitle=document.createElement("h3");
-    yearTitle.textContent=`Is ${year}, a Leap year?`;
-    console.log(yearTitle);
-    divCardTitle.append(yearTitle);
+        yearTitle.textContent=`Is ${year}, a Leap year?`;
+        divCardTitle.append(yearTitle);
     const divCardResult=document.createElement("div");
     const isLeapYear=document.createElement("p");
-    divCardResult.setAttribute("class","message");
-    isLeapYear.textContent=result;
-    console.log(isLeapYear);
-    divCardResult.append(isLeapYear);
-    resultDisplay.appendChild(divCardTitle);
-    resultDisplay.appendChild(divCardResult);
-    console.log(resultDisplay);
-
+        divCardResult.setAttribute("class","message");
+        isLeapYear.textContent=result;
+        divCardResult.append(isLeapYear);
+        
+        resultDisplay.appendChild(divCardTitle);
+        resultDisplay.appendChild(divCardResult);
 }
-
-
 
 
 //Below function returns the previous leap year
 const previousLeap=(year)=>{
-    
     while(true){
         year--;
         if ((year%4===0 && year%100!== 0) ||(year%400===0)){
@@ -95,7 +86,6 @@ const previousLeap=(year)=>{
             prevArrow.textContent=`The Previous Leap Year was: ${year}`;
             localStorage.setItem("System Input", year);
             return year;
-            
         }
     }
 
