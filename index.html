@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="./assets/style/style.css">
+     <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- <link rel="stylesheet" href="./assets/style/style.css"> -->
     <link rel="stylesheet" href="./assets/style/frog.css">
     <title>Fun with Leap Year</title>
 </head>
@@ -39,11 +39,20 @@
 
             </div>
         </section>
+        <div class="row">
+            <div class="col">
+                <h3>Click on the left/right arrow to find the <em>previous</em> or <em>upcoming</em> Leap Year</h3>
+            </div>
+            <div class="col" id="display-arrow">
+                <h2 id="next-arrow" style="display: none;"></h2>
+                <h2 id="previous-arrow" style="display: none;"></h2>
+            </div>
+        </div>
          <!-- This is the section for the frog -->
         <section class="frog-area">
               <!-- The area for the left arrow -->
               <div id="left-arrow"></div>
-              
+<div class="frog">
             <div class="frog-face"> 
                 <div class="frog-lf-eye">
                     <div class="frog-lf-pupil">
@@ -75,18 +84,11 @@
                     <div class="rt-feet"></div>
                 </div>
         </div>
+    </div>
         <!-- The area for the left arrow -->
         <div id="right-arrow"></div>
         </section>
-        <div class="row">
-            <div class="col">
-                <h3>Click on the left/right arrow to find the <em>previous</em> or <em>upcoming</em> Leap Year</h3>
-            </div>
-            <div class="col" id="display-arrow">
-                <h2 id="next-arrow" style="display: none;"></h2>
-                <h2 id="previous-arrow" style="display: none;"></h2>
-            </div>
-        </div>
+       
     </main>
     <!-- this is a footer -->
     <footer>
