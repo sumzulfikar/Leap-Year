@@ -5,7 +5,7 @@
 ## Explore Exciting Features
 - **Leap Year Checker:** Curious about a specific year? Use the intuitive tool to instantly determine if it's a Leap Year.
 - **Leap Through Time:** Navigate through the years with ease using the interactive left and right arrows, located next to our friendly Frog companion.
-- **Leap Into Knowledge: **Gain insights into the history and significance of Leap Years, unlocking a wealth of information with just a click.**Coming soon!
+- **Leap Into Knowledge:** Gain insights into the history and significance of Leap Years, unlocking a wealth of information with just a click.**Coming soon!
 ### Apllication
 Click this url [link](https://sumzulfikar.github.io/Leap-Year/) to find out about Leap Years!
 
