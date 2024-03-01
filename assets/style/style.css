@@ -1,0 +1,38 @@
+*{padding:5px}
+body{
+    width: 912.76px;
+
+    height: 100vh;
+    z-index: 7;
+    }
+    
+    header{
+        height: 30vmin;
+        width: 70vw;
+        padding: 0;
+        background-color: beige;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .container{
+        width: 70vw;
+        height:20vmin;
+      
+        z-index: 2;
+    }
+    
+     .title{
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+         font-weight: bold;  
+        font-size: larger;
+    } 
+    #message{
+        z-index: 3;
+        width: 100%;
+     
+      
+    }
+  

@@ -66,7 +66,7 @@ createDisplay=(result,year)=>{
     const divCardTitle=document.createElement("div");
     divCardTitle.setAttribute("class","title");
     const yearTitle=document.createElement("h3");
-    yearTitle.textContent=`Is the ${year}, a Leap year?`;
+    yearTitle.textContent=`Is ${year}, a Leap year?`;
     console.log(yearTitle);
     divCardTitle.append(yearTitle);
     const divCardResult=document.createElement("div");
