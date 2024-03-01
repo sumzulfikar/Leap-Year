@@ -51,7 +51,7 @@ let result="";
     }
 
     else{ 
-        result=`No, the year is not a leap year.`;
+        result=`No, the year ${year} is not a leap year.`;
         }
 
     createDisplay(result,year);
@@ -60,11 +60,13 @@ let result="";
 }
 
 createDisplay=(result,year)=>{
+    
     const resultDisplay=document.querySelector("#result");
+    resultDisplay.textContent= "";
     const divCardTitle=document.createElement("div");
     divCardTitle.setAttribute("class","title");
     const yearTitle=document.createElement("h3");
-    yearTitle.textContent=year;
+    yearTitle.textContent=`Is the ${year}, a Leap year?`;
     console.log(yearTitle);
     divCardTitle.append(yearTitle);
     const divCardResult=document.createElement("div");

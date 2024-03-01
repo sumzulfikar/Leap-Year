@@ -1,6 +1,7 @@
 *{padding:5px}
 body{
-    
+    width: 912.76px;
+
     height: 100vh;
     z-index: 7;
     }
@@ -19,22 +20,19 @@ body{
     .container{
         width: 70vw;
         height:20vmin;
-        border: solid #e389d7;
+      
         z-index: 2;
     }
     
-    .title{
-        border: solid purple;
-      
+     .title{
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+         font-weight: bold;  
         font-size: larger;
-    }
+    } 
     #message{
         z-index: 3;
-        border: 2px solid greenyellow;
-        font-size: medium;
-        padding: 5px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: bold;
+        width: 100%;
+     
       
     }
   
@@ -42,8 +40,8 @@ body{
 .frog-area{
     background-color: #7DC7DE;
     padding-top: 20px;
-    height: 70vh;
-    width: 70vw;
+    height: 451px;
+    width: 634px;
     display: flex;
     
     justify-content: space-between;

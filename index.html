@@ -28,20 +28,23 @@
     <main>
         <!-- Section where users can interact and find out if an Year is Leap Year -->
         <section class="container">
+            <div class="grid grid-cols-2 gap-4">
             <div class="userInput">
                 <label for="year" class="block text-gray-900">Which <em>Year</em> do you want to search?</label>
                 <input type="text" name="year" id="yearInput" class="block w-mid rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="YYYY">
-                    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300" id="searchBtn">
+                    <button class="rounded bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 gap-x-6" id="searchBtn">
                     Search
                     </button>
+                    
             </div>
             <div id="result">
 
             </div>
+        </div>
         </section>
         <div class="row">
             <div class="col">
-                <h3>Click on the left/right arrow to find the <em>previous</em> or <em>upcoming</em> Leap Year</h3>
+                <h3>Click on the left/right arrow  around the <em>Leap Frog</em>to find the <em>previous</em> or <em>upcoming</em> Leap Year</h3>
             </div>
             <div class="col" id="display-arrow">
                 <h2 id="next-arrow" style="display: none;"></h2>
