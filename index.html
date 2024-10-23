@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.tailwindcss.com"></script> 
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="stylesheet" href="./assets/style/frog.css">
     <title>Fun with Leap Year</title>
 </head>
+
 <body>
     <!-- Learning section for Leap Year -->
     <header>
-        <blockquote class="text-2xl font-semibold italic text-center text-slate-900">
+        <blockquote>
             What is
-            <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block">
-              <span class="relative text-white">Leap</span>
+            <span class="">
+                <span id="rhombus">Leap</span>
             </span>
             Year?
-          </blockquote>
-       <p>
-        The Earth 🌍orbits around the sun 🌞 in approximately 365.25 days, this is also known as a solar year.
-         We usually round the days in a calendar year to 365. To make up for the missing partial day,
-         we add one day to our calendar approximately every four years. That is a leap year!
-       </p>
-       <a href="https://spaceplace.nasa.gov/leap-year/en/">Learn More</a>
+        </blockquote>
+        <p>
+            The Earth 🌍orbits around the sun 🌞 in approximately 365.25 days, this is also known as a solar year.
+            We usually round the days in a calendar year to 365. To make up for the missing partial day,
+            we add one day to our calendar approximately every four years. That is a leap year!
+        </p>
+        <a href="https://spaceplace.nasa.gov/leap-year/en/">Learn More</a>
     </header>
     <main>
         <!-- Section where users can interact and find out if an Year is Leap Year -->
         <section class="container">
             <div class="grid grid-cols-2 gap-4">
-            <div class="userInput">
-                <label for="year" class="block text-gray-900">Which <em>Year</em> do you want to search?</label>
-                <input type="text" name="year" id="yearInput" class="block w-mid rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="YYYY">
-                    <button class="rounded bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 gap-x-6" id="searchBtn">
-                    Search
-                    </button>
-                    
-            </div>
-            <div id="result">
+                <div class="userInput">
+                    <label for="year" class="block text-gray-900">Which <em>Year</em> do you want to search?</label>
+                    <input type="text" name="year" id="yearInput"
+                        class="block w-mid rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        placeholder="YYYY">
+                    <button
+                        class="rounded bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 gap-x-6"
+                        id="searchBtn">Search</button>
+                </div>
+                <div id="result">
 
+                </div>
             </div>
-        </div>
         </section>
-        <div class="row">
-            <div class="col">
-                <h3>Click on the left/right arrow  around the <em>Leap Frog</em>to find the <em>previous</em> or <em>upcoming</em> Leap Year</h3>
+        <section>
+            <div class="row">
+                <div class="col">
+                    <h3>Click on the left/right arrow around the <em>Leap Frog</em>to find the <em>previous</em> or
+                        <em>upcoming</em> Leap Year
+                    </h3>
+                </div>
+                <div class="col" id="display-arrow">
+                    <h2 id="next-arrow" style="display: none;"></h2>
+                    <h2 id="previous-arrow" style="display: none;"></h2>
+                </div>
             </div>
-            <div class="col" id="display-arrow">
-                <h2 id="next-arrow" style="display: none;"></h2>
-                <h2 id="previous-arrow" style="display: none;"></h2>
-            </div>
-        </div>
-         <!-- This is the section for the frog -->
+        </section>
+
+        <!-- This is the section for the frog -->
         <section class="frog-area">
-              <!-- The area for the left arrow -->
-              <div id="left-arrow"></div>
-<div class="frog">
-            <div class="frog-face"> 
-                <div class="frog-lf-eye">
-                    <div class="frog-lf-pupil">
-                        <div class="sparkle1-lf"></div>
-                        <div class="sparkle2-lf"></div>
+            <!-- The area for the left arrow -->
+            <div id="left-arrow"></div>
+            <div class="frog">
+                <div class="frog-face">
+                    <div class="frog-lf-eye">
+                        <div class="frog-lf-pupil">
+                            <div class="sparkle1-lf"></div>
+                            <div class="sparkle2-lf"></div>
+                        </div>
                     </div>
-               </div>
-                <div class="frog-rt-eye">
-                    <div class="frog-rt-pupil">
-                        <div class="sparkle1-rt"></div>
-                        <div class="sparkle2-rt"></div>
+                    <div class="frog-rt-eye">
+                        <div class="frog-rt-pupil">
+                            <div class="sparkle1-rt"></div>
+                            <div class="sparkle2-rt"></div>
+                        </div>
+                    </div>
+                    <div class="smile">
                     </div>
                 </div>
-                <div class="smile">
-
+                <div class="frog-body">
+                    <div class="lf-hand"></div>
+                    <div class="rt-hand"></div>
+                </div>
+                <div class="leg-area">
+                    <div class="frog-leg-lf">
+                        <div class="lf-feet"></div>
+                    </div>
+                    <div class="frog-leg-rt">
+                        <div class="rt-feet"></div>
+                    </div>
                 </div>
             </div>
-          
-           
-            <div class="frog-body">
-                <div class="lf-hand"></div> 
-                <div class="rt-hand"></div>     
-            </div>
-            <div class="leg-area">
-                <div class="frog-leg-lf">
-                    <div class="lf-feet"></div>
-                </div>
-                <div class="frog-leg-rt">
-                    <div class="rt-feet"></div>
-                </div>
-        </div>
-    </div>
-        <!-- The area for the left arrow -->
-        <div id="right-arrow"></div>
+            <!-- The area for the left arrow -->
+            <div id="right-arrow"></div>
         </section>
-       
+
     </main>
     <!-- this is a footer -->
     <footer>
-    <p>Made with 🐸 Sumaiya Zulfikar</p>
-
+        <p>Made with 🐸 Sumaiya Zulfikar</p>
     </footer>
     <!-- links to scripts -->
 
     <script src="./assets/scripts/script.js"></script>
-    
+
 </body>
+
 </html>

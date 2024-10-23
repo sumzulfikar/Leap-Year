@@ -1,56 +1,61 @@
+/* Frog size for different screen sizes */
 
-.frog-area{
+
+
+.frog-area {
     background-color: #7DC7DE;
     padding-top: 20px;
     height: 451px;
     width: 634px;
     display: flex;
-    
     justify-content: space-between;
     align-items: center;
     position: relative;
     overflow: hidden;
     z-index: 4;
 }
- .frog {
-   width: 36%;
-} 
 
-#left-arrow,#right-arrow{
-    background-color: #4c4d49;  
-    height:10vmin;
+.frog {
+    width: 36%;
+}
+
+#left-arrow,
+#right-arrow {
+    background-color: #4c4d49;
+    height: 10vmin;
     width: 20%;
-    
+
     /* position: absolute; */
 }
 
-#left-arrow{
+#left-arrow {
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
-    left:30vmin;
+    left: 30vmin;
 }
 
-#right-arrow{
+#right-arrow {
     clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    right:30vmin;
+    right: 30vmin;
     margin: 10px;
 
 }
 
-.frog-face{
+.frog-face {
     background-color: #9bcc61;
-    border-radius: 43% 47% 42% 44% / 57% 54% 45% 40%  ;
-    width:239px ;
+    border-radius: 43% 47% 42% 44% / 57% 54% 45% 40%;
+    width: 239px;
     height: 157px;
     position: relative;
 
 }
-.frog-lf-eye{
+
+.frog-lf-eye {
     border: solid 10px #82c345;
-    background-color:#fdfbfa;
+    background-color: #fdfbfa;
     height: 67px;
-    width:67px;
-    left:3vmin;
-    top:-4vmin;
+    width: 67px;
+    left: 3vmin;
+    top: -4vmin;
     border-radius: 50%;
     position: absolute;
     display: flex;
@@ -58,56 +63,58 @@
     align-items: right;
 
 }
-.frog-lf-pupil{
- background-color: #010101;
- border-radius: 50%;
- height: 48px;
- width:48px;
- display: flex;
- flex-direction: column;
- justify-content: center;
+
+.frog-lf-pupil {
+    background-color: #010101;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
-.sparkle1-lf{
+
+.sparkle1-lf {
     height: 10px;
-    width:10px;
+    width: 10px;
     border-radius: 50%;
-    background-color:#fdfbfa;
-    align-items: bottom;   
+    background-color: #fdfbfa;
+    align-items: bottom;
     margin-left: 10%;
 
 }
-.sparkle2-lf{
+
+.sparkle2-lf {
     height: 15px;
-    width:15px;
+    width: 15px;
     border-radius: 50%;
-    background-color:#fdfbfa;
+    background-color: #fdfbfa;
     margin-left: 10%;
 
 }
-.sparkle1-rt{
+
+.sparkle1-rt {
     height: 10px;
-    width:10px;
+    width: 10px;
     border-radius: 50%;
-    background-color:#fdfbfa;
+    background-color: #fdfbfa;
     margin-left: 10%;
-
 }
-.sparkle2-rt{
+
+.sparkle2-rt {
     height: 15px;
-    width:15px;
+    width: 15px;
     border-radius: 50%;
-    background-color:#fdfbfa;
+    background-color: #fdfbfa;
     margin-left: 10%;
-
-
 }
 
-.frog-rt-eye{
+.frog-rt-eye {
     border: solid 10px #82c345;
-    background-color:#fdfbfa;
+    background-color: #fdfbfa;
     height: 67px;
-    width:67px;
+    width: 67px;
     right: 3vmin;
     top: -4vmin;
     border-radius: 50%;
@@ -115,21 +122,21 @@
     display: flex;
     justify-content: center;
     align-items: left;
-      
-   }
-   .frog-rt-pupil{
+}
+
+.frog-rt-pupil {
     background-color: #010101;
     border-radius: 50%;
     height: 48px;
-    width:48px;
+    width: 48px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
-  
 }
-.smile{
+
+.smile {
     width: 10vmin;
     height: 1vmin;
     background-color: #010101;
@@ -137,69 +144,63 @@
     position: relative;
     top: 14vmin;
     left: 12vmin;
-
-
 }
-.frog-body{
 
-    border-radius: 41% 46% 42% 43% / 34% 33% 35% 34% ;
-    background-color:#9bcc61;
+.frog-body {
+    border-radius: 41% 46% 42% 43% / 34% 33% 35% 34%;
+    background-color: #9bcc61;
     position: absolute;
-    width:119.5px ;
-    height:140px;
+    width: 119.5px;
+    height: 140px;
     bottom: 1.68rem;
     left: 16.12rem;
-    border-bottom:solid #5b9632;
-    
+    border-bottom: solid #5b9632;
 }
-.leg-area{
-    display: flex;
 
+.leg-area {
+    display: flex;
     position: relative;
 }
-.frog-leg-lf, .frog-leg-rt{
+
+.frog-leg-lf,
+.frog-leg-rt {
     border-radius: 50%;
     background-color: #6ead3b;
     width: 16vmin;
     height: 9vmin;
     top: 11vmin;
-    
     position: absolute;
-   
-  
 }
-.frog-leg-lf{
+
+.frog-leg-lf {
     left: 0vmin;
     transform: rotate(45deg);
-
 }
-.frog-leg-rt{
-    right:0vmin;
+
+.frog-leg-rt {
+    right: 0vmin;
     transform: rotate(-45deg);
 }
 
-.lf-hand, .rt-hand{
+.lf-hand,
+.rt-hand {
     background-color: #81c146;
     position: absolute;
     width: 1vmin;
     height: 7vmin;
-   
-    
-
-
 }
-.lf-hand{
+
+.lf-hand {
     transform: rotate(49deg);
     left: -1vmin;
     top: 1vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
-    
+
 }
-.rt-hand{
+
+.rt-hand {
     transform: rotate(130deg);
     right: -1vmin;
     top: 1vmin;
     border-radius: 0% 145% 121% 20%/20% 48% 35% 0%;
 }
-
-
