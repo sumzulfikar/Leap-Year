@@ -4,20 +4,21 @@
 
 .frog-area {
     background-color: #7DC7DE;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     height: 451px;
     width: 634px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
     z-index: 4;
 }
 
+/* 
 .frog {
     width: 36%;
-}
+} */
 
 #left-arrow,
 #right-arrow {
