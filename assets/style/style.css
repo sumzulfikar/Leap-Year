@@ -1,8 +1,3 @@
-* {
-    border-color: brown;
-    border-style: solid;
-}
-
 body {
 
     height: 100vh;
@@ -14,7 +9,7 @@ main {
     padding-left: 10%;
 }
 
-header {
+#header {
     height: 30vmin;
     width: 70vw;
     padding: 0;
@@ -51,10 +46,19 @@ blockquote {
     text-decoration: darkgrey;
 }
 
+.grid-container {
+    display: grid;
+}
+
+.grid-item {
+    align-self: center;
+}
+
+/* 
 .rhombus {
     position: relative;
     text-decoration-color: aliceblue;
     background-color: #E91E63;
-}
+} */
 
 /* before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block */
