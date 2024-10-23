@@ -1,14 +1,20 @@
-*{
-    padding:5px
+* {
+    border-color: brown;
+    border-style: solid;
 }
 
-body{
-    width: 912.76px;
+body {
+
     height: 100vh;
-    z-index: 7;
+
 }
-    
-header{
+
+main {
+    align-items: center;
+    padding-left: 10%;
+}
+
+header {
     height: 30vmin;
     width: 70vw;
     padding: 0;
@@ -20,20 +26,35 @@ header{
     z-index: 1;
 }
 
-.container{
+.container {
     width: 70vw;
-    height:20vmin;
+    height: 20vmin;
     z-index: 2;
 }
-    
-.title{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
-    font-weight: bold;  
-    font-size: larger;
-} 
 
-#message{
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#message {
     z-index: 3;
     width: 100%;
 }
-  
+
+blockquote {
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    align-items: center;
+    text-decoration: darkgrey;
+}
+
+.rhombus {
+    position: relative;
+    text-decoration-color: aliceblue;
+    background-color: #E91E63;
+}
+
+/* before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block */
